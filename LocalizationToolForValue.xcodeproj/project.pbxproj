@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F555546202AA9C5003B58E3 /* YQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F555544202AA9C5003B58E3 /* YQTableViewController.swift */; };
+		2F555547202AA9C5003B58E3 /* YQTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F555545202AA9C5003B58E3 /* YQTableViewController.xib */; };
+		2F555549202AAA3F003B58E3 /* YQTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F555548202AAA3F003B58E3 /* YQTableCellView.swift */; };
 		2F817599202983CE00CF37EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817598202983CE00CF37EF /* AppDelegate.swift */; };
 		2F81759B202983CE00CF37EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81759A202983CE00CF37EF /* ViewController.swift */; };
 		2F81759D202983CE00CF37EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F81759C202983CE00CF37EF /* Assets.xcassets */; };
 		2F8175A0202983CE00CF37EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F81759E202983CE00CF37EF /* Main.storyboard */; };
 		2F8175AC202983CE00CF37EF /* LocalizationToolForValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175AB202983CE00CF37EF /* LocalizationToolForValueTests.swift */; };
 		2F8175B7202983CE00CF37EF /* LocalizationToolForValueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175B6202983CE00CF37EF /* LocalizationToolForValueUITests.swift */; };
+		2F8175C72029948800CF37EF /* YQDragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175C62029948800CF37EF /* YQDragDropView.swift */; };
+		2F8175C920299B1C00CF37EF /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175C820299B1C00CF37EF /* MainWindowController.swift */; };
+		2F8175CB20299C7600CF37EF /* YQGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175CA20299C7600CF37EF /* YQGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F555544202AA9C5003B58E3 /* YQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableViewController.swift; sourceTree = "<group>"; };
+		2F555545202AA9C5003B58E3 /* YQTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YQTableViewController.xib; sourceTree = "<group>"; };
+		2F555548202AAA3F003B58E3 /* YQTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableCellView.swift; sourceTree = "<group>"; };
 		2F817595202983CE00CF37EF /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F817598202983CE00CF37EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F81759A202983CE00CF37EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +55,9 @@
 		2F8175B2202983CE00CF37EF /* LocalizationToolForValueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationToolForValueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8175B6202983CE00CF37EF /* LocalizationToolForValueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationToolForValueUITests.swift; sourceTree = "<group>"; };
 		2F8175B8202983CE00CF37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F8175C62029948800CF37EF /* YQDragDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDragDropView.swift; sourceTree = "<group>"; };
+		2F8175C820299B1C00CF37EF /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		2F8175CA20299C7600CF37EF /* YQGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +108,12 @@
 		2F817597202983CE00CF37EF /* LocalizationToolForValue */ = {
 			isa = PBXGroup;
 			children = (
+				2F8175C52029945100CF37EF /* View */,
 				2F817598202983CE00CF37EF /* AppDelegate.swift */,
+				2F555544202AA9C5003B58E3 /* YQTableViewController.swift */,
+				2F555545202AA9C5003B58E3 /* YQTableViewController.xib */,
 				2F81759A202983CE00CF37EF /* ViewController.swift */,
+				2F8175C820299B1C00CF37EF /* MainWindowController.swift */,
 				2F81759C202983CE00CF37EF /* Assets.xcassets */,
 				2F81759E202983CE00CF37EF /* Main.storyboard */,
 				2F8175A1202983CE00CF37EF /* Info.plist */,
@@ -122,6 +138,16 @@
 				2F8175B8202983CE00CF37EF /* Info.plist */,
 			);
 			path = LocalizationToolForValueUITests;
+			sourceTree = "<group>";
+		};
+		2F8175C52029945100CF37EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F8175C62029948800CF37EF /* YQDragDropView.swift */,
+				2F8175CA20299C7600CF37EF /* YQGradientView.swift */,
+				2F555548202AAA3F003B58E3 /* YQTableCellView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F555547202AA9C5003B58E3 /* YQTableViewController.xib in Resources */,
 				2F81759D202983CE00CF37EF /* Assets.xcassets in Resources */,
 				2F8175A0202983CE00CF37EF /* Main.storyboard in Resources */,
 			);
@@ -257,8 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F555549202AAA3F003B58E3 /* YQTableCellView.swift in Sources */,
 				2F81759B202983CE00CF37EF /* ViewController.swift in Sources */,
 				2F817599202983CE00CF37EF /* AppDelegate.swift in Sources */,
+				2F8175C920299B1C00CF37EF /* MainWindowController.swift in Sources */,
+				2F8175C72029948800CF37EF /* YQDragDropView.swift in Sources */,
+				2F8175CB20299C7600CF37EF /* YQGradientView.swift in Sources */,
+				2F555546202AA9C5003B58E3 /* YQTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +452,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LocalizationToolForValue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.LocalizationToolForValue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -435,6 +468,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LocalizationToolForValue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.LocalizationToolForValue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="system font weights other than Regular or Bold" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +676,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="LocalizationToolForValue" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,13 +685,13 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="LocalizationToolForValue" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-			<connections>
+                        <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
@@ -703,15 +706,171 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="LocalizationToolForValue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="627" height="420"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <visualEffectView appearanceType="vibrantLight" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="Koz-Dn-hKT">
+                                <rect key="frame" x="0.0" y="0.0" width="627" height="420"/>
+                            </visualEffectView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="nly-D6-2EX" customClass="YQGradientView" customModule="LocalizationToolForValue" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="627" height="320"/>
+                                <subviews>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="bum-Cu-nmi">
+                                        <rect key="frame" x="595" y="8" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="OSu-YN-qcW"/>
+                                            <constraint firstAttribute="height" constant="24" id="SxG-Fd-PUG"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="star" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="3Ch-C1-HbK">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="startAction:" target="XfG-lQ-9wD" id="Kts-8Y-RiC"/>
+                                        </connections>
+                                    </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="r4e-JA-BsO">
+                                        <rect key="frame" x="555" y="8" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="KSZ-LX-b7N"/>
+                                            <constraint firstAttribute="height" constant="24" id="Vji-94-pSo"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="set" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GZy-67-kdF">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="settingAction:" target="XfG-lQ-9wD" id="PbO-5B-fcX"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GT6-m3-s2N">
+                                        <rect key="frame" x="218" y="294" width="192" height="19"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="LocalizationToolForValue" id="6Gr-Y1-dcs">
+                                            <font key="font" metaFont="systemSemibold" size="16"/>
+                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qLu-ct-OAI">
+                                        <rect key="frame" x="6" y="270" width="302" height="18"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="源资源文件" id="ByN-iw-kAq">
+                                            <font key="font" size="14" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wiS-PJ-KYS">
+                                        <rect key="frame" x="319" y="270" width="302" height="18"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="目标资源文件" id="qsm-b5-DOW">
+                                            <font key="font" size="14" name=".PingFangSC-Regular"/>
+                                            <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZAL-jn-qaH" customClass="YQDragDropView" customModule="LocalizationToolForValue" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="32" width="313" height="238"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="placerholder"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽目标资源文件到这里!"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.46666666666666667" green="0.72156862745098038" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="qyF-e2-EL7" customClass="YQDragDropView" customModule="LocalizationToolForValue" customModuleProvider="target">
+                                        <rect key="frame" x="313" y="32" width="314" height="238"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="placerholder"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="text" value="拖拽目标资源文件到这里!"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.46666666670000001" green="0.72156862749999995" blue="0.85490196080000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </customView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZAL-jn-qaH" firstAttribute="top" secondItem="qLu-ct-OAI" secondAttribute="bottom" id="3qy-lh-bxJ"/>
+                                    <constraint firstItem="bum-Cu-nmi" firstAttribute="leading" secondItem="r4e-JA-BsO" secondAttribute="trailing" constant="16" id="72G-jX-Omp"/>
+                                    <constraint firstItem="r4e-JA-BsO" firstAttribute="bottom" secondItem="bum-Cu-nmi" secondAttribute="bottom" id="9pO-cP-Mn6"/>
+                                    <constraint firstAttribute="bottom" secondItem="bum-Cu-nmi" secondAttribute="bottom" constant="8" id="B9f-4t-Ze7"/>
+                                    <constraint firstAttribute="trailing" secondItem="qyF-e2-EL7" secondAttribute="trailing" id="Cxi-d8-BWS"/>
+                                    <constraint firstAttribute="height" constant="320" id="Jpj-0p-hTP"/>
+                                    <constraint firstItem="qyF-e2-EL7" firstAttribute="bottom" secondItem="r4e-JA-BsO" secondAttribute="top" id="Kfe-x4-1wz"/>
+                                    <constraint firstItem="GT6-m3-s2N" firstAttribute="centerX" secondItem="nly-D6-2EX" secondAttribute="centerX" id="Skr-yz-gJ7"/>
+                                    <constraint firstItem="qLu-ct-OAI" firstAttribute="leading" secondItem="nly-D6-2EX" secondAttribute="leading" constant="8" id="cDL-IS-NdK"/>
+                                    <constraint firstAttribute="trailing" secondItem="wiS-PJ-KYS" secondAttribute="trailing" constant="8" id="eMY-dD-wgZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bum-Cu-nmi" secondAttribute="trailing" constant="8" id="eux-cM-56e"/>
+                                    <constraint firstItem="ZAL-jn-qaH" firstAttribute="leading" secondItem="nly-D6-2EX" secondAttribute="leading" id="hHr-8A-K4L"/>
+                                    <constraint firstItem="wiS-PJ-KYS" firstAttribute="top" secondItem="qLu-ct-OAI" secondAttribute="top" id="hOX-NI-PJ9"/>
+                                    <constraint firstItem="qyF-e2-EL7" firstAttribute="top" secondItem="ZAL-jn-qaH" secondAttribute="top" id="kHL-Xc-R9x"/>
+                                    <constraint firstItem="ZAL-jn-qaH" firstAttribute="bottom" secondItem="qyF-e2-EL7" secondAttribute="bottom" id="pU3-uG-dWq"/>
+                                    <constraint firstItem="GT6-m3-s2N" firstAttribute="top" secondItem="nly-D6-2EX" secondAttribute="top" constant="7" id="tIu-aP-u4H"/>
+                                </constraints>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="nAB-5M-qYo" customClass="YQGradientView" customModule="LocalizationToolForValue" customModuleProvider="target">
+                                <rect key="frame" x="313" y="100" width="1" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="CI0-oE-3SI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="statusShapeIB">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layerBgColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lowGradientColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highGradientColor">
+                                        <color key="value" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="k72-Ef-4W9">
+                                <rect key="frame" x="0.0" y="0.0" width="627" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fRS-a7-bhN"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZAL-jn-qaH" firstAttribute="trailing" secondItem="nAB-5M-qYo" secondAttribute="leading" id="61x-V9-YEP"/>
+                            <constraint firstItem="Koz-Dn-hKT" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="8Hc-de-Een"/>
+                            <constraint firstItem="nly-D6-2EX" firstAttribute="top" secondItem="Koz-Dn-hKT" secondAttribute="top" id="DXL-7C-xXV"/>
+                            <constraint firstItem="qLu-ct-OAI" firstAttribute="top" secondItem="nAB-5M-qYo" secondAttribute="top" id="ENd-nD-qvG"/>
+                            <constraint firstItem="nly-D6-2EX" firstAttribute="leading" secondItem="Koz-Dn-hKT" secondAttribute="leading" id="Ecm-hC-YV5"/>
+                            <constraint firstItem="qLu-ct-OAI" firstAttribute="trailing" secondItem="nAB-5M-qYo" secondAttribute="trailing" constant="-8" id="KaV-hN-sCT"/>
+                            <constraint firstItem="k72-Ef-4W9" firstAttribute="top" secondItem="nly-D6-2EX" secondAttribute="bottom" id="Ui3-hP-cgZ"/>
+                            <constraint firstItem="k72-Ef-4W9" firstAttribute="leading" secondItem="Koz-Dn-hKT" secondAttribute="leading" id="YBv-nL-rFg"/>
+                            <constraint firstAttribute="bottom" secondItem="Koz-Dn-hKT" secondAttribute="bottom" id="YkN-tN-xea"/>
+                            <constraint firstItem="nAB-5M-qYo" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="32" id="aMr-fQ-MSA"/>
+                            <constraint firstItem="nAB-5M-qYo" firstAttribute="bottom" secondItem="nly-D6-2EX" secondAttribute="bottom" id="cik-6G-M6U"/>
+                            <constraint firstAttribute="trailing" secondItem="Koz-Dn-hKT" secondAttribute="trailing" id="fB8-vK-Trh"/>
+                            <constraint firstItem="nly-D6-2EX" firstAttribute="trailing" secondItem="Koz-Dn-hKT" secondAttribute="trailing" id="fBw-Xq-RTe"/>
+                            <constraint firstItem="Koz-Dn-hKT" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="fZb-sb-mMu"/>
+                            <constraint firstItem="nAB-5M-qYo" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="jLp-fI-pwF"/>
+                            <constraint firstItem="k72-Ef-4W9" firstAttribute="bottom" secondItem="Koz-Dn-hKT" secondAttribute="bottom" id="jPQ-Fb-nls"/>
+                            <constraint firstItem="wiS-PJ-KYS" firstAttribute="leading" secondItem="nAB-5M-qYo" secondAttribute="leading" constant="8" id="o9M-aW-3PR"/>
+                            <constraint firstItem="k72-Ef-4W9" firstAttribute="trailing" secondItem="Koz-Dn-hKT" secondAttribute="trailing" id="taz-z1-yi4"/>
+                            <constraint firstItem="qyF-e2-EL7" firstAttribute="leading" secondItem="nAB-5M-qYo" secondAttribute="leading" id="xAs-Y8-eIt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="fRS-a7-bhN" id="D36-go-6SA"/>
+                        <outlet property="settingView" destination="k72-Ef-4W9" id="8J6-GU-SuZ"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="213.5" y="790"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placerholder" width="128" height="128"/>
+        <image name="set" width="48" height="48"/>
+        <image name="star" width="48" height="48"/>
+    </resources>
 </document>
