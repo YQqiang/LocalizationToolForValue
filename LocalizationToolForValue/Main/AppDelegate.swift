@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  LocalizationToolForValue
 //
-//  Created by sungrow on 2018/2/6.
+//  Created by sungrow on 2018/2/8.
 //  Copyright © 2018年 sungrow. All rights reserved.
 //
 
@@ -20,10 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-    
+
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
     }
-
 }
 

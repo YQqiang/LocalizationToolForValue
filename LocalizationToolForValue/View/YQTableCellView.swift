@@ -17,26 +17,13 @@ class YQTableCellView: NSTableCellView {
             }
             fileType.image = model.isFolder ? NSImage.init(imageLiteralResourceName: "folder") : NSImage.init(imageLiteralResourceName: "file")
             fileName.stringValue = model.fileName
+            print("------- filename = \(fileName.stringValue)")
         }
     }
     
-    @IBOutlet var fileType: NSImageView!
-    @IBOutlet var fileName: NSTextField!
     
-    
-    override init(frame frameRect: NSRect) {
-        super.init(frame: frameRect)
-        setup()
-    }
-    
-    required init?(coder decoder: NSCoder) {
-        super.init(coder: decoder)
-        setup()
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    @IBOutlet weak var fileType: NSImageView!
+    @IBOutlet weak var fileName: NSTextField!
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
@@ -44,11 +31,4 @@ class YQTableCellView: NSTableCellView {
         // Drawing code here.
     }
     
-}
-
-// MARK: - private action
-extension YQTableCellView {
-    private func setup() {
-        Bundle.main.loadNibNamed(NSNib.Name(rawValue: "YQTableCellView"), owner: self, topLevelObjects: nil)
-    }
 }

@@ -7,77 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F3468F2202BE996000E5E18 /* YQTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3468F1202BE996000E5E18 /* YQTableCellView.xib */; };
-		2F346939202C2114000E5E18 /* YQTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346938202C2114000E5E18 /* YQTableViewDelegate.swift */; };
-		2F555549202AAA3F003B58E3 /* YQTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F555548202AAA3F003B58E3 /* YQTableCellView.swift */; };
-		2F55554D202AECD7003B58E3 /* YQFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55554C202AECD7003B58E3 /* YQFileModel.swift */; };
-		2F817599202983CE00CF37EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817598202983CE00CF37EF /* AppDelegate.swift */; };
-		2F81759B202983CE00CF37EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81759A202983CE00CF37EF /* ViewController.swift */; };
-		2F81759D202983CE00CF37EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F81759C202983CE00CF37EF /* Assets.xcassets */; };
-		2F8175A0202983CE00CF37EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F81759E202983CE00CF37EF /* Main.storyboard */; };
-		2F8175AC202983CE00CF37EF /* LocalizationToolForValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175AB202983CE00CF37EF /* LocalizationToolForValueTests.swift */; };
-		2F8175B7202983CE00CF37EF /* LocalizationToolForValueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175B6202983CE00CF37EF /* LocalizationToolForValueUITests.swift */; };
-		2F8175C72029948800CF37EF /* YQDragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175C62029948800CF37EF /* YQDragDropView.swift */; };
-		2F8175C920299B1C00CF37EF /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175C820299B1C00CF37EF /* MainWindowController.swift */; };
-		2F8175CB20299C7600CF37EF /* YQGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8175CA20299C7600CF37EF /* YQGradientView.swift */; };
+		2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */; };
+		2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */; };
+		2FC0C7BA202C339400D7CC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B9202C339400D7CC80 /* Assets.xcassets */; };
+		2FC0C7BD202C339400D7CC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FC0C7BB202C339400D7CC80 /* Main.storyboard */; };
+		2FC0C7C9202C339400D7CC80 /* LocalizationToolForValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7C8202C339400D7CC80 /* LocalizationToolForValueTests.swift */; };
+		2FC0C7D4202C339400D7CC80 /* LocalizationToolForValueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7D3202C339400D7CC80 /* LocalizationToolForValueUITests.swift */; };
+		2FC0C7E4202C340C00D7CC80 /* YQMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7E3202C340C00D7CC80 /* YQMainWindowController.swift */; };
+		2FC0C7E7202C347E00D7CC80 /* YQFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7E6202C347E00D7CC80 /* YQFileModel.swift */; };
+		2FC0C7EA202C34A100D7CC80 /* YQTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7E9202C34A100D7CC80 /* YQTableViewDelegate.swift */; };
+		2FC0C7EC202C34AC00D7CC80 /* YQDragDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7EB202C34AC00D7CC80 /* YQDragDropView.swift */; };
+		2FC0C7EE202C34B200D7CC80 /* YQGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7ED202C34B200D7CC80 /* YQGradientView.swift */; };
+		2FC0C7F1202C3B7000D7CC80 /* YQTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC0C7EF202C3B7000D7CC80 /* YQTableCellView.xib */; };
+		2FC0C7F2202C3B7000D7CC80 /* YQTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7F0202C3B7000D7CC80 /* YQTableCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F8175A8202983CE00CF37EF /* PBXContainerItemProxy */ = {
+		2FC0C7C5202C339400D7CC80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2F81758D202983CE00CF37EF /* Project object */;
+			containerPortal = 2FC0C7AA202C339400D7CC80 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F817594202983CE00CF37EF;
+			remoteGlobalIDString = 2FC0C7B1202C339400D7CC80;
 			remoteInfo = LocalizationToolForValue;
 		};
-		2F8175B3202983CE00CF37EF /* PBXContainerItemProxy */ = {
+		2FC0C7D0202C339400D7CC80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2F81758D202983CE00CF37EF /* Project object */;
+			containerPortal = 2FC0C7AA202C339400D7CC80 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2F817594202983CE00CF37EF;
+			remoteGlobalIDString = 2FC0C7B1202C339400D7CC80;
 			remoteInfo = LocalizationToolForValue;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F3468F1202BE996000E5E18 /* YQTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YQTableCellView.xib; sourceTree = "<group>"; };
-		2F346938202C2114000E5E18 /* YQTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableViewDelegate.swift; sourceTree = "<group>"; };
-		2F555548202AAA3F003B58E3 /* YQTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableCellView.swift; sourceTree = "<group>"; };
-		2F55554C202AECD7003B58E3 /* YQFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQFileModel.swift; sourceTree = "<group>"; };
-		2F817595202983CE00CF37EF /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F817598202983CE00CF37EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F81759A202983CE00CF37EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F81759C202983CE00CF37EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F81759F202983CE00CF37EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F8175A1202983CE00CF37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F8175A2202983CE00CF37EF /* LocalizationToolForValue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalizationToolForValue.entitlements; sourceTree = "<group>"; };
-		2F8175A7202983CE00CF37EF /* LocalizationToolForValueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationToolForValueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F8175AB202983CE00CF37EF /* LocalizationToolForValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationToolForValueTests.swift; sourceTree = "<group>"; };
-		2F8175AD202983CE00CF37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F8175B2202983CE00CF37EF /* LocalizationToolForValueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationToolForValueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F8175B6202983CE00CF37EF /* LocalizationToolForValueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationToolForValueUITests.swift; sourceTree = "<group>"; };
-		2F8175B8202983CE00CF37EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F8175C62029948800CF37EF /* YQDragDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQDragDropView.swift; sourceTree = "<group>"; };
-		2F8175C820299B1C00CF37EF /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		2F8175CA20299C7600CF37EF /* YQGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQGradientView.swift; sourceTree = "<group>"; };
+		2FC0C7B2202C339400D7CC80 /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQMainViewController.swift; sourceTree = "<group>"; };
+		2FC0C7B9202C339400D7CC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FC0C7BC202C339400D7CC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FC0C7BE202C339400D7CC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC0C7BF202C339400D7CC80 /* LocalizationToolForValue.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LocalizationToolForValue.entitlements; sourceTree = "<group>"; };
+		2FC0C7C4202C339400D7CC80 /* LocalizationToolForValueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationToolForValueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC0C7C8202C339400D7CC80 /* LocalizationToolForValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationToolForValueTests.swift; sourceTree = "<group>"; };
+		2FC0C7CA202C339400D7CC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC0C7CF202C339400D7CC80 /* LocalizationToolForValueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationToolForValueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC0C7D3202C339400D7CC80 /* LocalizationToolForValueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationToolForValueUITests.swift; sourceTree = "<group>"; };
+		2FC0C7D5202C339400D7CC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FC0C7E3202C340C00D7CC80 /* YQMainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQMainWindowController.swift; sourceTree = "<group>"; };
+		2FC0C7E6202C347E00D7CC80 /* YQFileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQFileModel.swift; sourceTree = "<group>"; };
+		2FC0C7E9202C34A100D7CC80 /* YQTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTableViewDelegate.swift; sourceTree = "<group>"; };
+		2FC0C7EB202C34AC00D7CC80 /* YQDragDropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQDragDropView.swift; sourceTree = "<group>"; };
+		2FC0C7ED202C34B200D7CC80 /* YQGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQGradientView.swift; sourceTree = "<group>"; };
+		2FC0C7EF202C3B7000D7CC80 /* YQTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQTableCellView.xib; sourceTree = "<group>"; };
+		2FC0C7F0202C3B7000D7CC80 /* YQTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YQTableCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F817592202983CE00CF37EF /* Frameworks */ = {
+		2FC0C7AF202C339400D7CC80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8175A4202983CE00CF37EF /* Frameworks */ = {
+		2FC0C7C1202C339400D7CC80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8175AF202983CE00CF37EF /* Frameworks */ = {
+		2FC0C7CC202C339400D7CC80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,90 +87,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F55554B202AECB3003B58E3 /* Model */ = {
+		2FC0C7A9202C339400D7CC80 = {
 			isa = PBXGroup;
 			children = (
-				2F55554C202AECD7003B58E3 /* YQFileModel.swift */,
-				2F346938202C2114000E5E18 /* YQTableViewDelegate.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2F81758C202983CE00CF37EF = {
-			isa = PBXGroup;
-			children = (
-				2F817597202983CE00CF37EF /* LocalizationToolForValue */,
-				2F8175AA202983CE00CF37EF /* LocalizationToolForValueTests */,
-				2F8175B5202983CE00CF37EF /* LocalizationToolForValueUITests */,
-				2F817596202983CE00CF37EF /* Products */,
+				2FC0C7B4202C339400D7CC80 /* LocalizationToolForValue */,
+				2FC0C7C7202C339400D7CC80 /* LocalizationToolForValueTests */,
+				2FC0C7D2202C339400D7CC80 /* LocalizationToolForValueUITests */,
+				2FC0C7B3202C339400D7CC80 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2F817596202983CE00CF37EF /* Products */ = {
+		2FC0C7B3202C339400D7CC80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F817595202983CE00CF37EF /* LocalizationToolForValue.app */,
-				2F8175A7202983CE00CF37EF /* LocalizationToolForValueTests.xctest */,
-				2F8175B2202983CE00CF37EF /* LocalizationToolForValueUITests.xctest */,
+				2FC0C7B2202C339400D7CC80 /* LocalizationToolForValue.app */,
+				2FC0C7C4202C339400D7CC80 /* LocalizationToolForValueTests.xctest */,
+				2FC0C7CF202C339400D7CC80 /* LocalizationToolForValueUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F817597202983CE00CF37EF /* LocalizationToolForValue */ = {
+		2FC0C7B4202C339400D7CC80 /* LocalizationToolForValue */ = {
 			isa = PBXGroup;
 			children = (
-				2F55554B202AECB3003B58E3 /* Model */,
-				2F8175C52029945100CF37EF /* View */,
-				2F817598202983CE00CF37EF /* AppDelegate.swift */,
-				2F81759A202983CE00CF37EF /* ViewController.swift */,
-				2F8175C820299B1C00CF37EF /* MainWindowController.swift */,
-				2F81759C202983CE00CF37EF /* Assets.xcassets */,
-				2F81759E202983CE00CF37EF /* Main.storyboard */,
-				2F8175A1202983CE00CF37EF /* Info.plist */,
-				2F8175A2202983CE00CF37EF /* LocalizationToolForValue.entitlements */,
+				2FC0C7E8202C349100D7CC80 /* Model */,
+				2FC0C7E5202C345700D7CC80 /* View */,
+				2FC0C7E2202C33B500D7CC80 /* Main */,
+				2FC0C7E1202C33A100D7CC80 /* Resource */,
+				2FC0C7BE202C339400D7CC80 /* Info.plist */,
+				2FC0C7BF202C339400D7CC80 /* LocalizationToolForValue.entitlements */,
 			);
 			path = LocalizationToolForValue;
 			sourceTree = "<group>";
 		};
-		2F8175AA202983CE00CF37EF /* LocalizationToolForValueTests */ = {
+		2FC0C7C7202C339400D7CC80 /* LocalizationToolForValueTests */ = {
 			isa = PBXGroup;
 			children = (
-				2F8175AB202983CE00CF37EF /* LocalizationToolForValueTests.swift */,
-				2F8175AD202983CE00CF37EF /* Info.plist */,
+				2FC0C7C8202C339400D7CC80 /* LocalizationToolForValueTests.swift */,
+				2FC0C7CA202C339400D7CC80 /* Info.plist */,
 			);
 			path = LocalizationToolForValueTests;
 			sourceTree = "<group>";
 		};
-		2F8175B5202983CE00CF37EF /* LocalizationToolForValueUITests */ = {
+		2FC0C7D2202C339400D7CC80 /* LocalizationToolForValueUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2F8175B6202983CE00CF37EF /* LocalizationToolForValueUITests.swift */,
-				2F8175B8202983CE00CF37EF /* Info.plist */,
+				2FC0C7D3202C339400D7CC80 /* LocalizationToolForValueUITests.swift */,
+				2FC0C7D5202C339400D7CC80 /* Info.plist */,
 			);
 			path = LocalizationToolForValueUITests;
 			sourceTree = "<group>";
 		};
-		2F8175C52029945100CF37EF /* View */ = {
+		2FC0C7E1202C33A100D7CC80 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				2F8175C62029948800CF37EF /* YQDragDropView.swift */,
-				2F8175CA20299C7600CF37EF /* YQGradientView.swift */,
-				2F555548202AAA3F003B58E3 /* YQTableCellView.swift */,
-				2F3468F1202BE996000E5E18 /* YQTableCellView.xib */,
+				2FC0C7B9202C339400D7CC80 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2FC0C7E2202C33B500D7CC80 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */,
+				2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */,
+				2FC0C7E3202C340C00D7CC80 /* YQMainWindowController.swift */,
+				2FC0C7BB202C339400D7CC80 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2FC0C7E5202C345700D7CC80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FC0C7EB202C34AC00D7CC80 /* YQDragDropView.swift */,
+				2FC0C7ED202C34B200D7CC80 /* YQGradientView.swift */,
+				2FC0C7F0202C3B7000D7CC80 /* YQTableCellView.swift */,
+				2FC0C7EF202C3B7000D7CC80 /* YQTableCellView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2FC0C7E8202C349100D7CC80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FC0C7E6202C347E00D7CC80 /* YQFileModel.swift */,
+				2FC0C7E9202C34A100D7CC80 /* YQTableViewDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F817594202983CE00CF37EF /* LocalizationToolForValue */ = {
+		2FC0C7B1202C339400D7CC80 /* LocalizationToolForValue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F8175BB202983CE00CF37EF /* Build configuration list for PBXNativeTarget "LocalizationToolForValue" */;
+			buildConfigurationList = 2FC0C7D8202C339400D7CC80 /* Build configuration list for PBXNativeTarget "LocalizationToolForValue" */;
 			buildPhases = (
-				2F817591202983CE00CF37EF /* Sources */,
-				2F817592202983CE00CF37EF /* Frameworks */,
-				2F817593202983CE00CF37EF /* Resources */,
+				2FC0C7AE202C339400D7CC80 /* Sources */,
+				2FC0C7AF202C339400D7CC80 /* Frameworks */,
+				2FC0C7B0202C339400D7CC80 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -178,72 +194,73 @@
 			);
 			name = LocalizationToolForValue;
 			productName = LocalizationToolForValue;
-			productReference = 2F817595202983CE00CF37EF /* LocalizationToolForValue.app */;
+			productReference = 2FC0C7B2202C339400D7CC80 /* LocalizationToolForValue.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2F8175A6202983CE00CF37EF /* LocalizationToolForValueTests */ = {
+		2FC0C7C3202C339400D7CC80 /* LocalizationToolForValueTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F8175BE202983CE00CF37EF /* Build configuration list for PBXNativeTarget "LocalizationToolForValueTests" */;
+			buildConfigurationList = 2FC0C7DB202C339400D7CC80 /* Build configuration list for PBXNativeTarget "LocalizationToolForValueTests" */;
 			buildPhases = (
-				2F8175A3202983CE00CF37EF /* Sources */,
-				2F8175A4202983CE00CF37EF /* Frameworks */,
-				2F8175A5202983CE00CF37EF /* Resources */,
+				2FC0C7C0202C339400D7CC80 /* Sources */,
+				2FC0C7C1202C339400D7CC80 /* Frameworks */,
+				2FC0C7C2202C339400D7CC80 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F8175A9202983CE00CF37EF /* PBXTargetDependency */,
+				2FC0C7C6202C339400D7CC80 /* PBXTargetDependency */,
 			);
 			name = LocalizationToolForValueTests;
 			productName = LocalizationToolForValueTests;
-			productReference = 2F8175A7202983CE00CF37EF /* LocalizationToolForValueTests.xctest */;
+			productReference = 2FC0C7C4202C339400D7CC80 /* LocalizationToolForValueTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2F8175B1202983CE00CF37EF /* LocalizationToolForValueUITests */ = {
+		2FC0C7CE202C339400D7CC80 /* LocalizationToolForValueUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F8175C1202983CE00CF37EF /* Build configuration list for PBXNativeTarget "LocalizationToolForValueUITests" */;
+			buildConfigurationList = 2FC0C7DE202C339400D7CC80 /* Build configuration list for PBXNativeTarget "LocalizationToolForValueUITests" */;
 			buildPhases = (
-				2F8175AE202983CE00CF37EF /* Sources */,
-				2F8175AF202983CE00CF37EF /* Frameworks */,
-				2F8175B0202983CE00CF37EF /* Resources */,
+				2FC0C7CB202C339400D7CC80 /* Sources */,
+				2FC0C7CC202C339400D7CC80 /* Frameworks */,
+				2FC0C7CD202C339400D7CC80 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F8175B4202983CE00CF37EF /* PBXTargetDependency */,
+				2FC0C7D1202C339400D7CC80 /* PBXTargetDependency */,
 			);
 			name = LocalizationToolForValueUITests;
 			productName = LocalizationToolForValueUITests;
-			productReference = 2F8175B2202983CE00CF37EF /* LocalizationToolForValueUITests.xctest */;
+			productReference = 2FC0C7CF202C339400D7CC80 /* LocalizationToolForValueUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F81758D202983CE00CF37EF /* Project object */ = {
+		2FC0C7AA202C339400D7CC80 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YQ;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = sungrow;
 				TargetAttributes = {
-					2F817594202983CE00CF37EF = {
+					2FC0C7B1202C339400D7CC80 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					2F8175A6202983CE00CF37EF = {
+					2FC0C7C3202C339400D7CC80 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 2F817594202983CE00CF37EF;
+						TestTargetID = 2FC0C7B1202C339400D7CC80;
 					};
-					2F8175B1202983CE00CF37EF = {
+					2FC0C7CE202C339400D7CC80 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 2F817594202983CE00CF37EF;
+						TestTargetID = 2FC0C7B1202C339400D7CC80;
 					};
 				};
 			};
-			buildConfigurationList = 2F817590202983CE00CF37EF /* Build configuration list for PBXProject "LocalizationToolForValue" */;
+			buildConfigurationList = 2FC0C7AD202C339400D7CC80 /* Build configuration list for PBXProject "LocalizationToolForValue" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,37 +268,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F81758C202983CE00CF37EF;
-			productRefGroup = 2F817596202983CE00CF37EF /* Products */;
+			mainGroup = 2FC0C7A9202C339400D7CC80;
+			productRefGroup = 2FC0C7B3202C339400D7CC80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F817594202983CE00CF37EF /* LocalizationToolForValue */,
-				2F8175A6202983CE00CF37EF /* LocalizationToolForValueTests */,
-				2F8175B1202983CE00CF37EF /* LocalizationToolForValueUITests */,
+				2FC0C7B1202C339400D7CC80 /* LocalizationToolForValue */,
+				2FC0C7C3202C339400D7CC80 /* LocalizationToolForValueTests */,
+				2FC0C7CE202C339400D7CC80 /* LocalizationToolForValueUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F817593202983CE00CF37EF /* Resources */ = {
+		2FC0C7B0202C339400D7CC80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F81759D202983CE00CF37EF /* Assets.xcassets in Resources */,
-				2F3468F2202BE996000E5E18 /* YQTableCellView.xib in Resources */,
-				2F8175A0202983CE00CF37EF /* Main.storyboard in Resources */,
+				2FC0C7BA202C339400D7CC80 /* Assets.xcassets in Resources */,
+				2FC0C7BD202C339400D7CC80 /* Main.storyboard in Resources */,
+				2FC0C7F1202C3B7000D7CC80 /* YQTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8175A5202983CE00CF37EF /* Resources */ = {
+		2FC0C7C2202C339400D7CC80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8175B0202983CE00CF37EF /* Resources */ = {
+		2FC0C7CD202C339400D7CC80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -291,57 +308,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F817591202983CE00CF37EF /* Sources */ = {
+		2FC0C7AE202C339400D7CC80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F555549202AAA3F003B58E3 /* YQTableCellView.swift in Sources */,
-				2F81759B202983CE00CF37EF /* ViewController.swift in Sources */,
-				2F817599202983CE00CF37EF /* AppDelegate.swift in Sources */,
-				2F8175C920299B1C00CF37EF /* MainWindowController.swift in Sources */,
-				2F346939202C2114000E5E18 /* YQTableViewDelegate.swift in Sources */,
-				2F8175C72029948800CF37EF /* YQDragDropView.swift in Sources */,
-				2F8175CB20299C7600CF37EF /* YQGradientView.swift in Sources */,
-				2F55554D202AECD7003B58E3 /* YQFileModel.swift in Sources */,
+				2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */,
+				2FC0C7E4202C340C00D7CC80 /* YQMainWindowController.swift in Sources */,
+				2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */,
+				2FC0C7EA202C34A100D7CC80 /* YQTableViewDelegate.swift in Sources */,
+				2FC0C7E7202C347E00D7CC80 /* YQFileModel.swift in Sources */,
+				2FC0C7F2202C3B7000D7CC80 /* YQTableCellView.swift in Sources */,
+				2FC0C7EC202C34AC00D7CC80 /* YQDragDropView.swift in Sources */,
+				2FC0C7EE202C34B200D7CC80 /* YQGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8175A3202983CE00CF37EF /* Sources */ = {
+		2FC0C7C0202C339400D7CC80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8175AC202983CE00CF37EF /* LocalizationToolForValueTests.swift in Sources */,
+				2FC0C7C9202C339400D7CC80 /* LocalizationToolForValueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2F8175AE202983CE00CF37EF /* Sources */ = {
+		2FC0C7CB202C339400D7CC80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8175B7202983CE00CF37EF /* LocalizationToolForValueUITests.swift in Sources */,
+				2FC0C7D4202C339400D7CC80 /* LocalizationToolForValueUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2F8175A9202983CE00CF37EF /* PBXTargetDependency */ = {
+		2FC0C7C6202C339400D7CC80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F817594202983CE00CF37EF /* LocalizationToolForValue */;
-			targetProxy = 2F8175A8202983CE00CF37EF /* PBXContainerItemProxy */;
+			target = 2FC0C7B1202C339400D7CC80 /* LocalizationToolForValue */;
+			targetProxy = 2FC0C7C5202C339400D7CC80 /* PBXContainerItemProxy */;
 		};
-		2F8175B4202983CE00CF37EF /* PBXTargetDependency */ = {
+		2FC0C7D1202C339400D7CC80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2F817594202983CE00CF37EF /* LocalizationToolForValue */;
-			targetProxy = 2F8175B3202983CE00CF37EF /* PBXContainerItemProxy */;
+			target = 2FC0C7B1202C339400D7CC80 /* LocalizationToolForValue */;
+			targetProxy = 2FC0C7D0202C339400D7CC80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2F81759E202983CE00CF37EF /* Main.storyboard */ = {
+		2FC0C7BB202C339400D7CC80 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F81759F202983CE00CF37EF /* Base */,
+				2FC0C7BC202C339400D7CC80 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -349,7 +366,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2F8175B9202983CE00CF37EF /* Debug */ = {
+		2FC0C7D6202C339400D7CC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -406,7 +423,7 @@
 			};
 			name = Debug;
 		};
-		2F8175BA202983CE00CF37EF /* Release */ = {
+		2FC0C7D7202C339400D7CC80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -455,7 +472,7 @@
 			};
 			name = Release;
 		};
-		2F8175BC202983CE00CF37EF /* Debug */ = {
+		2FC0C7D9202C339400D7CC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -464,14 +481,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LocalizationToolForValue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.LocalizationToolForValue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		2F8175BD202983CE00CF37EF /* Release */ = {
+		2FC0C7DA202C339400D7CC80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -480,14 +496,13 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LocalizationToolForValue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.LocalizationToolForValue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		2F8175BF202983CE00CF37EF /* Debug */ = {
+		2FC0C7DC202C339400D7CC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -503,7 +518,7 @@
 			};
 			name = Debug;
 		};
-		2F8175C0202983CE00CF37EF /* Release */ = {
+		2FC0C7DD202C339400D7CC80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -519,7 +534,7 @@
 			};
 			name = Release;
 		};
-		2F8175C2202983CE00CF37EF /* Debug */ = {
+		2FC0C7DF202C339400D7CC80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -534,7 +549,7 @@
 			};
 			name = Debug;
 		};
-		2F8175C3202983CE00CF37EF /* Release */ = {
+		2FC0C7E0202C339400D7CC80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -552,43 +567,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F817590202983CE00CF37EF /* Build configuration list for PBXProject "LocalizationToolForValue" */ = {
+		2FC0C7AD202C339400D7CC80 /* Build configuration list for PBXProject "LocalizationToolForValue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F8175B9202983CE00CF37EF /* Debug */,
-				2F8175BA202983CE00CF37EF /* Release */,
+				2FC0C7D6202C339400D7CC80 /* Debug */,
+				2FC0C7D7202C339400D7CC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F8175BB202983CE00CF37EF /* Build configuration list for PBXNativeTarget "LocalizationToolForValue" */ = {
+		2FC0C7D8202C339400D7CC80 /* Build configuration list for PBXNativeTarget "LocalizationToolForValue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F8175BC202983CE00CF37EF /* Debug */,
-				2F8175BD202983CE00CF37EF /* Release */,
+				2FC0C7D9202C339400D7CC80 /* Debug */,
+				2FC0C7DA202C339400D7CC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F8175BE202983CE00CF37EF /* Build configuration list for PBXNativeTarget "LocalizationToolForValueTests" */ = {
+		2FC0C7DB202C339400D7CC80 /* Build configuration list for PBXNativeTarget "LocalizationToolForValueTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F8175BF202983CE00CF37EF /* Debug */,
-				2F8175C0202983CE00CF37EF /* Release */,
+				2FC0C7DC202C339400D7CC80 /* Debug */,
+				2FC0C7DD202C339400D7CC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F8175C1202983CE00CF37EF /* Build configuration list for PBXNativeTarget "LocalizationToolForValueUITests" */ = {
+		2FC0C7DE202C339400D7CC80 /* Build configuration list for PBXNativeTarget "LocalizationToolForValueUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F8175C2202983CE00CF37EF /* Debug */,
-				2F8175C3202983CE00CF37EF /* Release */,
+				2FC0C7DF202C339400D7CC80 /* Debug */,
+				2FC0C7E0202C339400D7CC80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F81758D202983CE00CF37EF /* Project object */;
+	rootObject = 2FC0C7AA202C339400D7CC80 /* Project object */;
 }

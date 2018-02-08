@@ -92,8 +92,8 @@ final class YQDragDropView: NSView {
 extension YQDragDropView {
     private func createView() {
         registerForDraggedTypes([.backwardsCompatibleFileURL])
-        layer?.borderColor = NSColor.red.cgColor
-        layer?.borderWidth = 3
+//        layer?.borderColor = NSColor.red.cgColor
+//        layer?.borderWidth = 3
     }
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {

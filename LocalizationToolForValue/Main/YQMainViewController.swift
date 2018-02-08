@@ -1,14 +1,17 @@
 //
-//  ViewController.swift
+//  YQMainViewController
 //  LocalizationToolForValue
 //
-//  Created by sungrow on 2018/2/6.
+//  Created by sungrow on 2018/2/8.
 //  Copyright © 2018年 sungrow. All rights reserved.
 //
 
 import Cocoa
 
-class ViewController: NSViewController {
+class YQMainViewController: NSViewController {
+
+    @IBOutlet weak var sourceTableView: NSTableView!
+    @IBOutlet weak var targetTableView: NSTableView!
     
     /// 局部常量
     private let settingViewHeight: CGFloat = 100
@@ -19,8 +22,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var targetDragDropView: YQDragDropView!
     @IBOutlet weak var bgGradientView: YQGradientView!
     
-    @IBOutlet weak var sourceTableView: NSTableView!
-    @IBOutlet weak var targetTableView: NSTableView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
+    private lazy var sourceDataList: [YQFileModel] = [YQFileModel]()
+    private lazy var targetDataList: [YQFileModel] = [YQFileModel]()
     
     fileprivate lazy var sourceDelegate: YQTableViewDelegate = {
         let delegate = YQTableViewDelegate()
@@ -37,15 +42,9 @@ class ViewController: NSViewController {
     }()
     
     
-    
-    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
-    
-    private lazy var sourceDataList: [YQFileModel] = [YQFileModel]()
-    private lazy var targetDataList: [YQFileModel] = [YQFileModel]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         bottomConstraint.constant = 0
         
         sourceDragDropView.delegate = self
@@ -56,15 +55,14 @@ class ViewController: NSViewController {
         
         targetTableView.delegate = targetDelegate
         targetTableView.dataSource = targetDelegate
-        
     }
-    
+
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
-
+    
     @IBAction func startAction(_ sender: NSButton) {
     }
     
@@ -79,10 +77,21 @@ class ViewController: NSViewController {
             context.duration = 0.25
         }, completionHandler: nil)
     }
+    
+    @IBAction func clearSourceDataList(_ sender: NSButton) {
+        sourceDataList.removeAll()
+        reloadSourceTableVC()
+    }
+    
+    @IBAction func clearTargetDataList(_ sender: NSButton) {
+        targetDataList.removeAll()
+        reloadTargetTableVC()
+    }
+    
 }
 
 // MARK: - private Action
-extension ViewController {
+extension YQMainViewController {
     private func reloadSourceTableVC() {
         sourceDragDropView.isHidden = sourceDataList.count > 0
         sourceTableView.isHidden = !sourceDragDropView.isHidden
@@ -97,7 +106,7 @@ extension ViewController {
 }
 
 // MARK: - YQDragDropViewDelegate
-extension ViewController: YQDragDropViewDelegate {
+extension YQMainViewController: YQDragDropViewDelegate {
     func draggingFileAccept(_ dragDropView: YQDragDropView, files: [String]) {
         if dragDropView == sourceDragDropView {
             sourceDataList.removeAll()
@@ -125,3 +134,4 @@ extension ViewController: YQDragDropViewDelegate {
         }
     }
 }
+

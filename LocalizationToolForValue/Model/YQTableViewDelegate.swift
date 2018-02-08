@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class YQTableViewDelegate: NSObject, NSTableViewDataSource, NSTableViewDelegate {
+class YQTableViewDelegate: NSObject {
     
     var fileModels: [YQFileModel]? {
         didSet {
@@ -16,16 +16,10 @@ class YQTableViewDelegate: NSObject, NSTableViewDataSource, NSTableViewDelegate 
         }
     }
     
-    var tableview: NSTableView?
-    
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return fileModels?.count ?? 0
-    }
-    
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        let cell = tableView.makeView(withIdentifier: (tableColumn?.identifier)!, owner: self) as? YQTableCellView
-        cell?.fileModel = fileModels?[row]
-        return nil
+    var tableview: NSTableView? {
+        didSet {
+            tableview?.register(NSNib(nibNamed: NSNib.Name(rawValue: "YQTableCellView"), bundle: nil)!, forIdentifier: NSUserInterfaceItemIdentifier(rawValue: "YQTableCellView"))
+        }
     }
     
 }
@@ -38,13 +32,26 @@ extension YQTableViewDelegate {
 }
 
 // MARK: - NSTableViewDataSource
-//extension YQTableViewDelegate: NSTableViewDataSource {
-//
-//
-//}
+extension YQTableViewDelegate: NSTableViewDataSource {
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return fileModels?.count ?? 0
+    }
+    
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
+        print("------ \(row)")
+        let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "YQTableCellView"), owner: self) as? YQTableCellView
+        cell?.fileModel = fileModels?[row]
+        return cell
+    }
+    
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 60
+    }
+
+}
 
 // MARK: - NSTableViewDelegate
-//extension YQTableViewDelegate: NSTableViewDelegate {
-//
-//}
+extension YQTableViewDelegate: NSTableViewDelegate {
+
+}
 
