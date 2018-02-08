@@ -8,10 +8,10 @@
 
 import Cocoa
 
-protocol YQDragDropViewDelegate {
-    func draggingEntered()
-    func draggingExit()
-    func draggingFileAccept(_ files:[String])
+@objc protocol YQDragDropViewDelegate:NSObjectProtocol {
+    @objc optional func draggingEntered(_ dragDropView: YQDragDropView)
+    @objc optional func draggingExit(_ dragDropView: YQDragDropView)
+    func draggingFileAccept(_ dragDropView: YQDragDropView, files:[String])
 }
 
 final class YQDragDropView: NSView {
@@ -48,12 +48,14 @@ final class YQDragDropView: NSView {
     
     fileprivate lazy var imageV: NSImageView = {
         let imageV = NSImageView()
+        imageV.isEnabled = false
         addSubview(imageV)
         return imageV
     }()
     
     fileprivate lazy var textF: NSTextField = {
         let textField = NSTextField()
+        textField.isEnabled = false
         textField.isEditable = false
         textField.backgroundColor = NSColor.clear
         textField.isBordered = false
@@ -79,7 +81,6 @@ final class YQDragDropView: NSView {
         let textFConstraintBottom = NSLayoutConstraint(item: self, attribute: .bottom, relatedBy: .greaterThanOrEqual, toItem: textF, attribute: .bottom, multiplier: 1, constant: 0)
         addConstraints([textFConstraintTop, textFConstraintLeft, textFConstraintRight, textFConstraintBottom])
         
-        
     }
 
     override func draw(_ dirtyRect: NSRect) {
@@ -91,11 +92,15 @@ final class YQDragDropView: NSView {
 extension YQDragDropView {
     private func createView() {
         registerForDraggedTypes([.backwardsCompatibleFileURL])
+        layer?.borderColor = NSColor.red.cgColor
+        layer?.borderWidth = 3
     }
     
     override func draggingEntered(_ sender: NSDraggingInfo) -> NSDragOperation {
         if let delegate = self.delegate {
-            delegate.draggingEntered();
+            if delegate.responds(to: #selector(draggingEntered(_:))) {
+                delegate.draggingEntered!(self);
+            }
         }
         let pastboard = sender.draggingPasteboard()
         if (pastboard.types?.contains(.backwardsCompatibleFileURL))! {
@@ -106,7 +111,9 @@ extension YQDragDropView {
     
     override func draggingExited(_ sender: NSDraggingInfo?) {
         if let delegate = self.delegate {
-            delegate.draggingExit();
+            if delegate.responds(to: #selector(draggingExited(_:))) {
+                delegate.draggingExit!(self);
+            }
         }
     }
     
@@ -118,7 +125,7 @@ extension YQDragDropView {
         let files: [String]? = sender.draggingPasteboard().propertyList(forType: .backwardsCompatibleFileURL) as? [String]
         print("------ \(String(describing: files))")
         if self.delegate != nil, let files = files {
-            self.delegate?.draggingFileAccept(files);
+            self.delegate?.draggingFileAccept(self, files: files);
         }
         return true
     }

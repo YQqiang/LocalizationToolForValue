@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F555546202AA9C5003B58E3 /* YQTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F555544202AA9C5003B58E3 /* YQTableViewController.swift */; };
-		2F555547202AA9C5003B58E3 /* YQTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F555545202AA9C5003B58E3 /* YQTableViewController.xib */; };
+		2F3468F2202BE996000E5E18 /* YQTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3468F1202BE996000E5E18 /* YQTableCellView.xib */; };
+		2F346939202C2114000E5E18 /* YQTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F346938202C2114000E5E18 /* YQTableViewDelegate.swift */; };
 		2F555549202AAA3F003B58E3 /* YQTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F555548202AAA3F003B58E3 /* YQTableCellView.swift */; };
+		2F55554D202AECD7003B58E3 /* YQFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F55554C202AECD7003B58E3 /* YQFileModel.swift */; };
 		2F817599202983CE00CF37EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817598202983CE00CF37EF /* AppDelegate.swift */; };
 		2F81759B202983CE00CF37EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F81759A202983CE00CF37EF /* ViewController.swift */; };
 		2F81759D202983CE00CF37EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F81759C202983CE00CF37EF /* Assets.xcassets */; };
@@ -39,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F555544202AA9C5003B58E3 /* YQTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableViewController.swift; sourceTree = "<group>"; };
-		2F555545202AA9C5003B58E3 /* YQTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YQTableViewController.xib; sourceTree = "<group>"; };
+		2F3468F1202BE996000E5E18 /* YQTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YQTableCellView.xib; sourceTree = "<group>"; };
+		2F346938202C2114000E5E18 /* YQTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableViewDelegate.swift; sourceTree = "<group>"; };
 		2F555548202AAA3F003B58E3 /* YQTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQTableCellView.swift; sourceTree = "<group>"; };
+		2F55554C202AECD7003B58E3 /* YQFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQFileModel.swift; sourceTree = "<group>"; };
 		2F817595202983CE00CF37EF /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F817598202983CE00CF37EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F81759A202983CE00CF37EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F55554B202AECB3003B58E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F55554C202AECD7003B58E3 /* YQFileModel.swift */,
+				2F346938202C2114000E5E18 /* YQTableViewDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2F81758C202983CE00CF37EF = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +119,9 @@
 		2F817597202983CE00CF37EF /* LocalizationToolForValue */ = {
 			isa = PBXGroup;
 			children = (
+				2F55554B202AECB3003B58E3 /* Model */,
 				2F8175C52029945100CF37EF /* View */,
 				2F817598202983CE00CF37EF /* AppDelegate.swift */,
-				2F555544202AA9C5003B58E3 /* YQTableViewController.swift */,
-				2F555545202AA9C5003B58E3 /* YQTableViewController.xib */,
 				2F81759A202983CE00CF37EF /* ViewController.swift */,
 				2F8175C820299B1C00CF37EF /* MainWindowController.swift */,
 				2F81759C202983CE00CF37EF /* Assets.xcassets */,
@@ -146,6 +156,7 @@
 				2F8175C62029948800CF37EF /* YQDragDropView.swift */,
 				2F8175CA20299C7600CF37EF /* YQGradientView.swift */,
 				2F555548202AAA3F003B58E3 /* YQTableCellView.swift */,
+				2F3468F1202BE996000E5E18 /* YQTableCellView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,8 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F555547202AA9C5003B58E3 /* YQTableViewController.xib in Resources */,
 				2F81759D202983CE00CF37EF /* Assets.xcassets in Resources */,
+				2F3468F2202BE996000E5E18 /* YQTableCellView.xib in Resources */,
 				2F8175A0202983CE00CF37EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,9 +299,10 @@
 				2F81759B202983CE00CF37EF /* ViewController.swift in Sources */,
 				2F817599202983CE00CF37EF /* AppDelegate.swift in Sources */,
 				2F8175C920299B1C00CF37EF /* MainWindowController.swift in Sources */,
+				2F346939202C2114000E5E18 /* YQTableViewDelegate.swift in Sources */,
 				2F8175C72029948800CF37EF /* YQDragDropView.swift in Sources */,
 				2F8175CB20299C7600CF37EF /* YQGradientView.swift in Sources */,
-				2F555546202AA9C5003B58E3 /* YQTableViewController.swift in Sources */,
+				2F55554D202AECD7003B58E3 /* YQFileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
