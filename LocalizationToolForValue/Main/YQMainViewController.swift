@@ -65,8 +65,9 @@ class YQMainViewController: NSViewController {
     
     @IBAction func startAction(_ sender: NSButton) {
         self.sourceDataList.forEach { (sourceFileModel) in
-            sourceFileModel.enumeratorFile({ (eachFile) in
-                print("------- eachFile = \(eachFile)")
+            sourceFileModel.enumeratorFile({ (filePath) in
+//                let sourceKeyValueModels = SplitManager.shared.split(YQFileModel(filePath: filePath))
+//                JointManager.shared.Joint(sourceKeyValueModels)
             })
         }
     }

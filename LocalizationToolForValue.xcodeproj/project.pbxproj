@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F09ADC0202D28CF007FD91E /* EnumeratorFileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADBF202D28CF007FD91E /* EnumeratorFileProtocol.swift */; };
+		2F09ADC3202D3EFD007FD91E /* KeyValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADC2202D3EFD007FD91E /* KeyValueModel.swift */; };
+		2F09ADC5202D424E007FD91E /* SplitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADC4202D424E007FD91E /* SplitManager.swift */; };
+		2F09ADC7202D4D83007FD91E /* JointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADC6202D4D83007FD91E /* JointManager.swift */; };
 		2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */; };
 		2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */; };
 		2FC0C7BA202C339400D7CC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B9202C339400D7CC80 /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		2F09ADBF202D28CF007FD91E /* EnumeratorFileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumeratorFileProtocol.swift; sourceTree = "<group>"; };
+		2F09ADC2202D3EFD007FD91E /* KeyValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueModel.swift; sourceTree = "<group>"; };
+		2F09ADC4202D424E007FD91E /* SplitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitManager.swift; sourceTree = "<group>"; };
+		2F09ADC6202D4D83007FD91E /* JointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointManager.swift; sourceTree = "<group>"; };
 		2FC0C7B2202C339400D7CC80 /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQMainViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +182,9 @@
 				2FC0C7E6202C347E00D7CC80 /* YQFileModel.swift */,
 				2FC0C7E9202C34A100D7CC80 /* YQTableViewDelegate.swift */,
 				2F09ADBF202D28CF007FD91E /* EnumeratorFileProtocol.swift */,
+				2F09ADC2202D3EFD007FD91E /* KeyValueModel.swift */,
+				2F09ADC4202D424E007FD91E /* SplitManager.swift */,
+				2F09ADC6202D4D83007FD91E /* JointManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +259,11 @@
 					2FC0C7B1202C339400D7CC80 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					2FC0C7C3202C339400D7CC80 = {
 						CreatedOnToolsVersion = 9.2;
@@ -318,9 +332,12 @@
 				2F09ADC0202D28CF007FD91E /* EnumeratorFileProtocol.swift in Sources */,
 				2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */,
 				2FC0C7E4202C340C00D7CC80 /* YQMainWindowController.swift in Sources */,
+				2F09ADC3202D3EFD007FD91E /* KeyValueModel.swift in Sources */,
 				2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */,
+				2F09ADC5202D424E007FD91E /* SplitManager.swift in Sources */,
 				2FC0C7EA202C34A100D7CC80 /* YQTableViewDelegate.swift in Sources */,
 				2FC0C7E7202C347E00D7CC80 /* YQFileModel.swift in Sources */,
+				2F09ADC7202D4D83007FD91E /* JointManager.swift in Sources */,
 				2FC0C7F2202C3B7000D7CC80 /* YQTableCellView.swift in Sources */,
 				2FC0C7EC202C34AC00D7CC80 /* YQDragDropView.swift in Sources */,
 				2FC0C7EE202C34B200D7CC80 /* YQGradientView.swift in Sources */,
@@ -480,7 +497,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LocalizationToolForValue/LocalizationToolForValue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LocalizationToolForValue/Info.plist;
@@ -495,7 +511,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LocalizationToolForValue/LocalizationToolForValue.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = LocalizationToolForValue/Info.plist;
