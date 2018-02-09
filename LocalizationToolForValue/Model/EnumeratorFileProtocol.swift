@@ -9,7 +9,7 @@
 import Foundation
 
 protocol EnumeratorFileProtocol {
-    var filePath: String { get set}
+    var filePath: String { get set }
 }
 
 extension EnumeratorFileProtocol {
@@ -53,7 +53,7 @@ extension EnumeratorFileProtocol {
         var fileName: String? = (directoryEnumerator?.nextObject() as! String?)
         while (fileName != nil) {
             if let closure = forEach {
-                closure(fileName!)
+                closure(homePath + "/" + fileName!)
             }
             fileName = (directoryEnumerator?.nextObject() as! String?)
         }
