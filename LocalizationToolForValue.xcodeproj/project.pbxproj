@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F09ADC0202D28CF007FD91E /* EnumeratorFileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADBF202D28CF007FD91E /* EnumeratorFileProtocol.swift */; };
 		2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */; };
 		2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */; };
 		2FC0C7BA202C339400D7CC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B9202C339400D7CC80 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F09ADBF202D28CF007FD91E /* EnumeratorFileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumeratorFileProtocol.swift; sourceTree = "<group>"; };
 		2FC0C7B2202C339400D7CC80 /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQMainViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				2FC0C7E6202C347E00D7CC80 /* YQFileModel.swift */,
 				2FC0C7E9202C34A100D7CC80 /* YQTableViewDelegate.swift */,
+				2F09ADBF202D28CF007FD91E /* EnumeratorFileProtocol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F09ADC0202D28CF007FD91E /* EnumeratorFileProtocol.swift in Sources */,
 				2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */,
 				2FC0C7E4202C340C00D7CC80 /* YQMainWindowController.swift in Sources */,
 				2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */,

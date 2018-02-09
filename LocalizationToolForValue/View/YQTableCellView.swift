@@ -15,8 +15,13 @@ class YQTableCellView: NSTableCellView {
             guard let model = fileModel else {
                 return
             }
-            fileType.image = model.isFolder ? NSImage.init(imageLiteralResourceName: "folder") : NSImage.init(imageLiteralResourceName: "file")
+            if ["png", "jpg", "jpeg"].contains(model.fileExtension) {
+                fileType.image = NSImage(contentsOfFile: model.filePath)
+            } else {
+                fileType.image = model.isFolder ? NSImage.init(imageLiteralResourceName: "folder") : NSImage.init(imageLiteralResourceName: "file")                
+            }
             fileName.stringValue = model.fileName
+            
             print("------- filename = \(fileName.stringValue)")
         }
     }

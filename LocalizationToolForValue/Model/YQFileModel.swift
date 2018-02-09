@@ -8,28 +8,22 @@
 
 import Cocoa
 
-class YQFileModel: NSObject {
-    var filePath: String = ""
+struct YQFileModel: EnumeratorFileProtocol {
+    var filePath: String
     
-    /// 是否是文件夹
     var isFolder: Bool {
-        var folder: ObjCBool = false
-        FileManager.default.fileExists(atPath: filePath, isDirectory: &folder)
-        return folder.boolValue
+        return isFolder()
     }
     
-    /// 文件名称
     var fileName: String {
-        return (filePath as NSString?)?.lastPathComponent ?? ""
+        return fileName()
     }
     
-    /// 不带扩展名的文件名称
     var fileNameWithoutExtension: String {
-        return (fileName as NSString?)?.deletingPathExtension ?? ""
+        return fileNameWithoutExtension()
     }
     
-    /// 文件扩展名
     var fileExtension: String {
-        return (filePath as NSString?)?.pathExtension ?? ""
+        return fileExtension()
     }
 }

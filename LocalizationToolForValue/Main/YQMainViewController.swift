@@ -64,6 +64,11 @@ class YQMainViewController: NSViewController {
     }
     
     @IBAction func startAction(_ sender: NSButton) {
+        self.sourceDataList.forEach { (sourceFileModel) in
+            sourceFileModel.enumeratorFile({ (eachFile) in
+                print("------- eachFile = \(eachFile)")
+            })
+        }
     }
     
     @IBAction func settingAction(_ sender: NSButton) {
@@ -111,8 +116,7 @@ extension YQMainViewController: YQDragDropViewDelegate {
         if dragDropView == sourceDragDropView {
             sourceDataList.removeAll()
             files.forEach { (pathStr) in
-                let fileModel = YQFileModel()
-                fileModel.filePath = pathStr
+                let fileModel = YQFileModel(filePath: pathStr)
                 sourceDataList.append(fileModel)
                 
                 print("------------ 分割线 ---------")
@@ -126,8 +130,7 @@ extension YQMainViewController: YQDragDropViewDelegate {
         } else {
             targetDataList.removeAll()
             files.forEach { (pathStr) in
-                let fileModel = YQFileModel()
-                fileModel.filePath = pathStr
+                let fileModel = YQFileModel(filePath: pathStr)
                 targetDataList.append(fileModel)
             }
             reloadTargetTableVC()

@@ -52,6 +52,12 @@ extension YQTableViewDelegate: NSTableViewDataSource {
 
 // MARK: - NSTableViewDelegate
 extension YQTableViewDelegate: NSTableViewDelegate {
-
+    
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        if let filePath = fileModels?[row].filePath {
+            NSWorkspace.shared.openFile(filePath)
+        }
+        return true
+    }
 }
 
