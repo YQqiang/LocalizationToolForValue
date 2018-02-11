@@ -93,6 +93,10 @@ class YQMainViewController: NSViewController {
         configOutpath()
     }
     
+    @IBAction func openOutFolderAction(_ sender: NSButton) {
+        NSWorkspace.shared.openFile(JointManager.shared.outPath)
+    }
+    
     @IBAction func restoreDefaultAction(_ sender: NSButton) {
         JointManager.shared.restoreDefaultPath()
         configOutpath()

@@ -948,6 +948,20 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </customView>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="rwn-FR-Qca">
+                                        <rect key="frame" x="588" y="8" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="EKM-jw-efT"/>
+                                            <constraint firstAttribute="height" constant="24" id="ppm-LF-wVy"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="openFolder" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CDF-0n-uvJ">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="openOutFolderAction:" target="XfG-lQ-9wD" id="LzL-Gh-gxc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="bPw-4M-vBu" firstAttribute="leading" secondItem="S63-gd-HSz" secondAttribute="leading" id="0Yq-Ya-hWV"/>
@@ -971,7 +985,9 @@
                                     <constraint firstItem="wTt-5T-W4M" firstAttribute="bottom" secondItem="wLT-oz-IMQ" secondAttribute="bottom" id="Tg3-oJ-CuY"/>
                                     <constraint firstItem="Zj3-tv-EpA" firstAttribute="top" secondItem="S63-gd-HSz" secondAttribute="top" id="The-Aq-7iQ"/>
                                     <constraint firstAttribute="bottom" secondItem="MUn-Ym-ozG" secondAttribute="bottom" id="VJj-BU-pQF"/>
+                                    <constraint firstItem="rwn-FR-Qca" firstAttribute="centerY" secondItem="W4e-vG-WQj" secondAttribute="centerY" id="Vaq-ay-Sh9"/>
                                     <constraint firstItem="wLT-oz-IMQ" firstAttribute="bottom" secondItem="bPw-4M-vBu" secondAttribute="bottom" id="Y7i-KR-k3l"/>
+                                    <constraint firstItem="W4e-vG-WQj" firstAttribute="leading" secondItem="rwn-FR-Qca" secondAttribute="trailing" constant="16" id="aWx-sP-M00"/>
                                     <constraint firstItem="S63-gd-HSz" firstAttribute="top" secondItem="MUn-Ym-ozG" secondAttribute="top" id="bPU-FZ-XCL"/>
                                     <constraint firstItem="ZNk-lm-ncy" firstAttribute="leading" secondItem="2Mw-rp-IlY" secondAttribute="leading" constant="8" id="cne-TI-MtA"/>
                                     <constraint firstItem="wLT-oz-IMQ" firstAttribute="trailing" secondItem="Zj3-tv-EpA" secondAttribute="trailing" id="cvs-Nd-y4j"/>
@@ -1095,6 +1111,7 @@
     </scenes>
     <resources>
         <image name="clear" width="24" height="24"/>
+        <image name="openFolder" width="24" height="24"/>
         <image name="placerholder" width="128" height="128"/>
         <image name="set" width="48" height="48"/>
         <image name="star" width="48" height="48"/>
