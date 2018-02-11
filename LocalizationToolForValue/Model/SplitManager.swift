@@ -10,6 +10,7 @@ import Foundation
 
 enum SplitFileType {
     case strings(separateStr: String)
+    case json
     case xls
     case db
 }
@@ -19,10 +20,14 @@ final class SplitManager {
     private init(){}
     
     func split(_ fileModel: YQFileModel) -> [KeyValueModel] {
+        var splitFiletype: SplitFileType = .strings(separateStr: "")
         if ["strings", "txt"].contains(fileModel.fileExtension) {
-            return split(fileModel, splitFileType: .strings(separateStr: "\" = \""))
+            splitFiletype = .strings(separateStr: "\" = \"")
         }
-        return [KeyValueModel]()
+        if ["json"].contains(fileModel.fileExtension) {
+            splitFiletype = .json
+        }
+        return split(fileModel, splitFileType: splitFiletype)
     }
 }
 
@@ -32,10 +37,26 @@ extension SplitManager {
         switch splitFileType {
         case .strings(separateStr: let separateStr):
             return splitStrings(fileModel, separateStr: separateStr)
+        case .json:
+            return splitJson(fileModel)
         default:
             break
         }
         return [KeyValueModel]()
+    }
+    
+    private func splitJson(_ fileModel: YQFileModel) -> [KeyValueModel] {
+        var sourceKeyValueModels = [KeyValueModel]()
+        let jsonContent = try? String.init(contentsOfFile: fileModel.filePath)
+        let jsonData = jsonContent?.data(using: .utf8)
+        let deCoder = JSONDecoder()
+        if let data = jsonData {
+            let keyValueModels = try? deCoder.decode([KeyValueModel].self, from: data)
+            if let models = keyValueModels {
+                sourceKeyValueModels = sourceKeyValueModels + models
+            }
+        }
+        return sourceKeyValueModels
     }
     
     private func splitStrings(_ fileModel: YQFileModel, separateStr: String) -> [KeyValueModel] {

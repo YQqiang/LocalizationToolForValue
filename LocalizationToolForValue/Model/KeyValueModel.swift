@@ -8,7 +8,7 @@
 
 import Foundation
 
-class KeyValueModel {
+class KeyValueModel: Decodable {
     // 键
     var key: String = ""
     // 中文
@@ -27,4 +27,5 @@ class KeyValueModel {
         self.geValue = geValue
         self.jpValue = jpValue
     }
+    
 }

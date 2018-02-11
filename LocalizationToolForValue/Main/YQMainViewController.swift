@@ -64,12 +64,21 @@ class YQMainViewController: NSViewController {
     }
     
     @IBAction func startAction(_ sender: NSButton) {
-        self.sourceDataList.forEach { (sourceFileModel) in
-            sourceFileModel.enumeratorFile({ (filePath) in
-//                let sourceKeyValueModels = SplitManager.shared.split(YQFileModel(filePath: filePath))
-//                JointManager.shared.Joint(sourceKeyValueModels)
+        let sourceKeyValueModels = allKeyValueModels(sourceDataList)
+        let targetKeyValueModels = allKeyValueModels(targetDataList)
+        
+        sourceKeyValueModels.forEach { (sourceKeyValueModel) in
+            targetKeyValueModels.forEach({ (targetKeyValueModel) in
+                if sourceKeyValueModel.key == targetKeyValueModel.key {
+                    sourceKeyValueModel.chValue = targetKeyValueModel.chValue
+                    sourceKeyValueModel.enValue = targetKeyValueModel.enValue
+                    sourceKeyValueModel.geValue = targetKeyValueModel.geValue
+                    sourceKeyValueModel.jpValue = targetKeyValueModel.jpValue
+                }
             })
         }
+        
+        JointManager.shared.Joint(sourceKeyValueModels)
     }
     
     @IBAction func settingAction(_ sender: NSButton) {
@@ -98,6 +107,18 @@ class YQMainViewController: NSViewController {
 
 // MARK: - private Action
 extension YQMainViewController {
+    
+    private func allKeyValueModels(_ fileModels: [YQFileModel]) -> [KeyValueModel] {
+        var keyValueModels = [KeyValueModel]()
+        fileModels.forEach { (fileModel) in
+            fileModel.enumeratorFile({ (filePath) in
+                let models = SplitManager.shared.split(YQFileModel(filePath: filePath))
+                keyValueModels = keyValueModels + models
+            })
+        }
+        return keyValueModels
+    }
+    
     private func reloadSourceTableVC() {
         sourceDragDropView.isHidden = sourceDataList.count > 0
         sourceTableView.isHidden = !sourceDragDropView.isHidden
