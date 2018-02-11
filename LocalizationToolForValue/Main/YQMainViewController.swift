@@ -23,6 +23,9 @@ class YQMainViewController: NSViewController {
     @IBOutlet weak var bgGradientView: YQGradientView!
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var outFolderNameTF: NSTextField!
+    @IBOutlet weak var outPathTF: NSTextField!
+    @IBOutlet weak var selectPathBTN: NSButton!
     
     private lazy var sourceDataList: [YQFileModel] = [YQFileModel]()
     private lazy var targetDataList: [YQFileModel] = [YQFileModel]()
@@ -55,6 +58,9 @@ class YQMainViewController: NSViewController {
         
         targetTableView.delegate = targetDelegate
         targetTableView.dataSource = targetDelegate
+        
+        configOutpath()
+        outFolderNameTF.delegate = self
     }
 
     override var representedObject: Any? {
@@ -79,6 +85,17 @@ class YQMainViewController: NSViewController {
         }
         
         JointManager.shared.Joint(sourceKeyValueModels)
+    }
+    
+    @IBAction func selectPathAction(_ sender: NSButton) {
+        let path = openPanel(canChooseFile: false)
+        JointManager.shared.homePath = path
+        configOutpath()
+    }
+    
+    @IBAction func restoreDefaultAction(_ sender: NSButton) {
+        JointManager.shared.restoreDefaultPath()
+        configOutpath()
     }
     
     @IBAction func settingAction(_ sender: NSButton) {
@@ -130,6 +147,30 @@ extension YQMainViewController {
         targetTableView.isHidden = !targetDragDropView.isHidden
         targetDelegate.fileModels = targetDataList
     }
+    
+    private func configOutpath() {
+        outFolderNameTF.stringValue = JointManager.shared.outFolderName
+        outPathTF.placeholderString = JointManager.shared.outPath
+    }
+    
+    /// 从Finder中选择文件/文件夹
+    ///
+    /// - Parameter canChooseFile: 是否是文件
+    /// - Returns: 文件/文件夹路径
+    fileprivate func openPanel(canChooseFile: Bool) -> String {
+        let openPanel = NSOpenPanel()
+        openPanel.allowsMultipleSelection = false
+        openPanel.canChooseDirectories = !canChooseFile
+        openPanel.canChooseFiles = canChooseFile
+        openPanel.canCreateDirectories = true
+        openPanel.title = "选择输出路径"
+        openPanel.message = "转换后的资源文件将会保存到该目录下"
+        if openPanel.runModal() == .OK {
+            let path = openPanel.urls.first?.absoluteString.components(separatedBy: ":").last?.removingPercentEncoding as NSString?
+            return path?.expandingTildeInPath ?? ""
+        }
+        return ""
+    }
 }
 
 // MARK: - YQDragDropViewDelegate
@@ -160,3 +201,11 @@ extension YQMainViewController: YQDragDropViewDelegate {
     }
 }
 
+extension YQMainViewController: NSTextFieldDelegate {
+    override func controlTextDidChange(_ obj: Notification) {
+        if let textField = obj.object as? NSTextField {
+            JointManager.shared.outFolderName = textField.stringValue
+            configOutpath()
+        }
+    }
+}

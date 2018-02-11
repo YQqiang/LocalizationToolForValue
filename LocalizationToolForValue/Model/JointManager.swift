@@ -19,19 +19,17 @@ final class JointManager {
     static let shared = JointManager.init()
     private init(){}
     
-    lazy var homePath: String = NSHomeDirectory() + "/Desktop"
+    private let defaultHomePath = NSHomeDirectory() + "/Desktop"
+    private let defaultOutFolderName = "LocalizationToolForValue"
     
-    lazy var outFolderName: String = "LocalizationToolForValue"
+    lazy var homePath: String = defaultHomePath
     
-    private lazy var outPath: String = {
+    lazy var outFolderName: String = defaultOutFolderName
+    
+    var outPath: String {
         let path = homePath + "/" + outFolderName
-        let fileManager = FileManager.default
-        
-        if !fileManager.fileExists(atPath: path) {
-            try! fileManager.createDirectory(atPath: path, withIntermediateDirectories: true, attributes: nil)
-        }
         return path
-    }()
+    }
     
     func Joint(_ keyValueModels: [KeyValueModel]) {
         var chContent = ""
@@ -45,9 +43,20 @@ final class JointManager {
             jpContent = jpContent + "\"" + keyValueModel.key + "\" = \"" + keyValueModel.jpValue + "\";" + "\n"
         }
         
+        let fileManager = FileManager.default
+        if !fileManager.fileExists(atPath: outPath) {
+            try! fileManager.createDirectory(atPath: outPath, withIntermediateDirectories: true, attributes: nil)
+        }
+
         try? chContent.write(toFile: "\(outPath)/ch.Strings", atomically: true, encoding: String.Encoding.utf8)
         try? enContent.write(toFile: "\(outPath)/en.Strings", atomically: true, encoding: String.Encoding.utf8)
         try? geContent.write(toFile: "\(outPath)/ge.Strings", atomically: true, encoding: String.Encoding.utf8)
         try? jpContent.write(toFile: "\(outPath)/jp.Strings", atomically: true, encoding: String.Encoding.utf8)
+    }
+    
+    /// 恢复默认的输出路径
+    func restoreDefaultPath() {
+        homePath = defaultHomePath
+        outFolderName = defaultOutFolderName
     }
 }
