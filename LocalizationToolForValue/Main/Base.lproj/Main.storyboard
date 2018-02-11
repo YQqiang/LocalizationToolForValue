@@ -802,7 +802,7 @@
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zj3-tv-EpA">
                                         <rect key="frame" x="357" y="267" width="337" height="18"/>
-                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="源资源文件" id="yyC-N4-pkn">
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="目标资源文件" id="yyC-N4-pkn">
                                             <font key="font" size="14" name=".PingFangSC-Regular"/>
                                             <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -962,6 +962,16 @@
                                             <action selector="openOutFolderAction:" target="XfG-lQ-9wD" id="LzL-Gh-gxc"/>
                                         </connections>
                                     </button>
+                                    <button horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RGz-ki-gjw">
+                                        <rect key="frame" x="661" y="289" width="25" height="25"/>
+                                        <buttonCell key="cell" type="help" bezelStyle="helpButton" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FBq-EX-don">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="questionAction:" target="XfG-lQ-9wD" id="fYc-Id-uIm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="bPw-4M-vBu" firstAttribute="leading" secondItem="S63-gd-HSz" secondAttribute="leading" id="0Yq-Ya-hWV"/>
@@ -974,6 +984,7 @@
                                     <constraint firstItem="S63-gd-HSz" firstAttribute="leading" secondItem="2Mw-rp-IlY" secondAttribute="leading" constant="8" id="8Dq-EB-h0J"/>
                                     <constraint firstItem="wTt-5T-W4M" firstAttribute="trailing" secondItem="wLT-oz-IMQ" secondAttribute="trailing" id="8hy-Se-r2R"/>
                                     <constraint firstAttribute="height" constant="320" id="ACg-WO-bFb"/>
+                                    <constraint firstAttribute="trailing" secondItem="RGz-ki-gjw" secondAttribute="trailing" constant="16" id="CFo-oq-nYB"/>
                                     <constraint firstItem="Zj3-tv-EpA" firstAttribute="leading" secondItem="MUn-Ym-ozG" secondAttribute="trailing" constant="8" id="D2l-4e-yR4"/>
                                     <constraint firstItem="MUn-Ym-ozG" firstAttribute="top" secondItem="6qy-LM-hqn" secondAttribute="bottom" constant="8" id="JSF-4C-wfW"/>
                                     <constraint firstItem="MUn-Ym-ozG" firstAttribute="centerX" secondItem="2Mw-rp-IlY" secondAttribute="centerX" id="Lrf-MU-pz9"/>
@@ -988,6 +999,7 @@
                                     <constraint firstItem="rwn-FR-Qca" firstAttribute="centerY" secondItem="W4e-vG-WQj" secondAttribute="centerY" id="Vaq-ay-Sh9"/>
                                     <constraint firstItem="wLT-oz-IMQ" firstAttribute="bottom" secondItem="bPw-4M-vBu" secondAttribute="bottom" id="Y7i-KR-k3l"/>
                                     <constraint firstItem="W4e-vG-WQj" firstAttribute="leading" secondItem="rwn-FR-Qca" secondAttribute="trailing" constant="16" id="aWx-sP-M00"/>
+                                    <constraint firstItem="RGz-ki-gjw" firstAttribute="centerY" secondItem="6qy-LM-hqn" secondAttribute="centerY" id="aeQ-hN-kxn"/>
                                     <constraint firstItem="S63-gd-HSz" firstAttribute="top" secondItem="MUn-Ym-ozG" secondAttribute="top" id="bPU-FZ-XCL"/>
                                     <constraint firstItem="ZNk-lm-ncy" firstAttribute="leading" secondItem="2Mw-rp-IlY" secondAttribute="leading" constant="8" id="cne-TI-MtA"/>
                                     <constraint firstItem="wLT-oz-IMQ" firstAttribute="trailing" secondItem="Zj3-tv-EpA" secondAttribute="trailing" id="cvs-Nd-y4j"/>

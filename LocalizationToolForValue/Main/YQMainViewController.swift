@@ -37,6 +37,14 @@ class YQMainViewController: NSViewController {
         return delegate
     }()
     
+    fileprivate lazy var popOver: NSPopover = {
+        let popView = NSPopover()
+        popView.contentViewController = YQQuestionViewController()
+        popView.behavior = .transient
+        popView.appearance = NSAppearance(named: NSAppearance.Name.vibrantLight)
+        return popView
+    }()
+    
     private lazy var targetDelegate: YQTableViewDelegate = {
         let delegate = YQTableViewDelegate()
         delegate.tableview = targetTableView
@@ -91,6 +99,10 @@ class YQMainViewController: NSViewController {
         let path = openPanel(canChooseFile: false)
         JointManager.shared.homePath = path
         configOutpath()
+    }
+    
+    @IBAction func questionAction(_ sender: NSButton) {
+        popOver.show(relativeTo: sender.bounds, of: sender, preferredEdge: NSRectEdge.maxY)
     }
     
     @IBAction func openOutFolderAction(_ sender: NSButton) {

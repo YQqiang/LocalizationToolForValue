@@ -11,6 +11,8 @@
 		2F09ADC3202D3EFD007FD91E /* KeyValueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADC2202D3EFD007FD91E /* KeyValueModel.swift */; };
 		2F09ADC5202D424E007FD91E /* SplitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADC4202D424E007FD91E /* SplitManager.swift */; };
 		2F09ADC7202D4D83007FD91E /* JointManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09ADC6202D4D83007FD91E /* JointManager.swift */; };
+		2F2981F220300E8800925E7F /* YQQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2981F020300E8800925E7F /* YQQuestionViewController.swift */; };
+		2F2981F320300E8800925E7F /* YQQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F2981F120300E8800925E7F /* YQQuestionViewController.xib */; };
 		2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */; };
 		2FC0C7B8202C339400D7CC80 /* YQMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */; };
 		2FC0C7BA202C339400D7CC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC0C7B9202C339400D7CC80 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		2F09ADC2202D3EFD007FD91E /* KeyValueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueModel.swift; sourceTree = "<group>"; };
 		2F09ADC4202D424E007FD91E /* SplitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitManager.swift; sourceTree = "<group>"; };
 		2F09ADC6202D4D83007FD91E /* JointManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JointManager.swift; sourceTree = "<group>"; };
+		2F2981F020300E8800925E7F /* YQQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQQuestionViewController.swift; sourceTree = "<group>"; };
+		2F2981F120300E8800925E7F /* YQQuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YQQuestionViewController.xib; sourceTree = "<group>"; };
 		2FC0C7B2202C339400D7CC80 /* LocalizationToolForValue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationToolForValue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YQMainViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				2FC0C7B5202C339400D7CC80 /* AppDelegate.swift */,
+				2F2981F020300E8800925E7F /* YQQuestionViewController.swift */,
+				2F2981F120300E8800925E7F /* YQQuestionViewController.xib */,
 				2FC0C7B7202C339400D7CC80 /* YQMainViewController.swift */,
 				2FC0C7E3202C340C00D7CC80 /* YQMainWindowController.swift */,
 				2FC0C7BB202C339400D7CC80 /* Main.storyboard */,
@@ -304,6 +310,7 @@
 			files = (
 				2FC0C7BA202C339400D7CC80 /* Assets.xcassets in Resources */,
 				2FC0C7BD202C339400D7CC80 /* Main.storyboard in Resources */,
+				2F2981F320300E8800925E7F /* YQQuestionViewController.xib in Resources */,
 				2FC0C7F1202C3B7000D7CC80 /* YQTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +342,7 @@
 				2F09ADC3202D3EFD007FD91E /* KeyValueModel.swift in Sources */,
 				2FC0C7B6202C339400D7CC80 /* AppDelegate.swift in Sources */,
 				2F09ADC5202D424E007FD91E /* SplitManager.swift in Sources */,
+				2F2981F220300E8800925E7F /* YQQuestionViewController.swift in Sources */,
 				2FC0C7EA202C34A100D7CC80 /* YQTableViewDelegate.swift in Sources */,
 				2FC0C7E7202C347E00D7CC80 /* YQFileModel.swift in Sources */,
 				2F09ADC7202D4D83007FD91E /* JointManager.swift in Sources */,
